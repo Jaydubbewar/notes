@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder, FormGroup,Validators } from '@angular/forms';
 import { Note } from '../note';
 import { NoteService } from '../note.service';
@@ -25,9 +25,6 @@ constructor(private fb:FormBuilder,private noteService:NoteService){
   })
 }
 
-  // ngOnInit(): {
-  //   // throw new Error('Method not implemented.');
-  // }
   addNote(){
     const {value } = this.noteForm
     console.log(value);
